@@ -3,6 +3,7 @@
 - JohnはAliceからの通信をtriggerに起床します
 - Johnは起床後、Bobに通知を送ります
 
+```mermaid
 sequenceDiagram
 participant Alice
 participant Bob
@@ -14,3 +15,17 @@ Note right of John: Rational thoughts<br/>prevail...
 John-->>Alice: Great!
 John->>Bob: How about you?
 Bob-->>John: Jolly good!
+```
+
+```mermaid
+graph TD
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me think}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[Car]
+click A "index.html#link-clicked" "link test"
+click B testClick "click test"
+classDef someclass fill:#f96;
+class A someclass;
+```
